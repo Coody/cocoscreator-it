@@ -167,7 +167,7 @@ var A = cc.Class({
         //cc.moveTo(duration,position,[y ])
         //this.node.runAction(cc.moveTo(cc.v2(150,150)));
         console.log('on-moveTo');
-        this.node.runAction(cc.moveTo(1,50,50));  //一秒内移到(150px,150px)的位置
+        this.node.runAction(cc.moveTo(1,50,50));  //一秒内移到(50px,50px)的位置
     },
     
     'on-moveBy':function(){
