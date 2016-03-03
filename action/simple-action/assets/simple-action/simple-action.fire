@@ -1255,8 +1255,8 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
-    "handler": "on-flipX"
+    "component": "",
+    "handler": ""
   },
   {
     "__type__": "cc.Node",
@@ -1731,7 +1731,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-place"
   },
   {
@@ -1969,7 +1969,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-callFunc"
   },
   {
@@ -2207,7 +2207,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-sequence"
   },
   {
@@ -2445,7 +2445,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-repeat"
   },
   {
@@ -2683,7 +2683,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-repeatForever"
   },
   {
@@ -2921,7 +2921,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-spawn"
   },
   {
@@ -3159,7 +3159,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-rotateTo"
   },
   {
@@ -3397,7 +3397,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-rotateBy"
   },
   {
@@ -3635,7 +3635,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-moveTo"
   },
   {
@@ -3873,7 +3873,7 @@
     "target": {
       "__id__": 3
     },
-    "component": "A-script",
+    "component": "A-script-simple",
     "handler": "on-moveBy"
   },
   {
