@@ -88,7 +88,7 @@ var A = cc.Class({
             //这个回调函数会收到两个参数
             //第一个是回调这个函数的组件所在的节点 即this.node
             //第二个是我们传进来的参数对象了{a:'cocos',b:'creator'},
-            let AScript = target.getComponent('A-script');
+            let AScript = target.getComponent('A-script-simple');
             AScript.callbacklabel.string = data.a+data.b;
     },
     
@@ -169,7 +169,7 @@ var A = cc.Class({
         console.log('on-moveTo');
         this.node.runAction(cc.moveTo(1,50,50));  //一秒内移到(50px,50px)的位置
     },
-    
+     
     'on-moveBy':function(){
         //相对移动
         //参数一 duration 持续时间
