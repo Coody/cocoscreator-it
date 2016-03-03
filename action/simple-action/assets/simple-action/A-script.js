@@ -131,7 +131,7 @@ var A = cc.Class({
          //可以单独传
         //this.node.runAction(cc.spawn(action1,action2));
         //也可以扔一个数组
-        //cc.sequence(tempArray);
+        //cc.spawn(tempArray);
         console.log('on-spawn');
         let actionsArray = [action1,action2];
         this.node.runAction(cc.spawn(actionsArray));
