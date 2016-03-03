@@ -78,7 +78,7 @@ var A = cc.Class({
         //回调
         //参数一 selector function类型 表示要执行的函数
         //参数二 [selectorTarget ] 表示执行该函数的对象 
-        //参数三 [data ]   传递给参数的函数
+        //参数三 [data ]   传递给函数的参数
         //cc.callFunc(selector, [selectorTarget ],[data ]);
         console.log('on-callFunc');
         this.node.runAction(cc.callFunc(this.mycallback,this,{a:'cocos',b:'creator'}));
