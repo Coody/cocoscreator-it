@@ -4114,11 +4114,11 @@
     "target": {
       "__id__": 113
     },
-    "component": "to-easing-scene",
+    "component": "to-other-scene",
     "handler": "to-easing-scene"
   },
   {
-    "__type__": "d05a7URvZlHwb+RT7IQjkFt",
+    "__type__": "d105f2t5TVJErXufGojomqu",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4143,7 +4143,7 @@
     "_fitHeight": true
   },
   {
-    "__type__": "081a701GENCOYcTk1A4GPzg",
+    "__type__": "c36a4J14gBFhay4yN9LmcH8",
     "_name": "",
     "_objFlags": 0,
     "node": {
