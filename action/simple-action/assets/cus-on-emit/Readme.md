@@ -16,5 +16,30 @@
 > callback(event);<br >
 > 参数一：event 事件 emit发送的信息在`event.detail`<br >
 
+> `A发消息给B`
+> 实际上并不存在A发消息给B这种功能，而是`B监听A`， `A朝天喊`，`监听的人自然能听到并作出反应`
+> 首先B要监听A
+
+```javascript
+   this.A.on('hello!',this.doAction,this); //this is B 
+```
+
+> 然后A朝天喊
+
+```javascript
+   this.node.emit('hello!','my name is A'); //this is A
+```
+
+> 最终B就会听到
+
+```javascript
+   doAction:function(event){
+        let msg = event.detail;  // 'my name is A'
+   }
+```
+
+> 其他的一对多， 多对多，都由上面的模式发展而来
+
+
 
 
