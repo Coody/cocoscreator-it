@@ -122,6 +122,6 @@
 
 ```javascript
    this.node.runAction(cc.moveBy(cc.v2(150,150)));
-   this.node.runAction(cc.moveBy(1,150,150));  //一秒内移到以当前位置Wie参考点加(150px,150px)的位置
+   this.node.runAction(cc.moveBy(1,150,150));  //一秒内移到以当前位置参考点加(150px,150px)的位置
 ```
 
