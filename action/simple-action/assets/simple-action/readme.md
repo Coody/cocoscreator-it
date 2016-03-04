@@ -32,4 +32,18 @@
     },
 ```
 
+> #####cc.sequence(tempArray)
+> `序列动画 可以让动画一个接一个地执行` <br >
+> 参数一 tempArray 需要顺序执行的一组动画<br >
 
+```javascript
+        let action1 = cc.rotateTo(1,180);
+        let action2 = cc.rotateTo(1,0);
+        //动画可以单独传
+        //this.node.runAction(cc.sequence(action1,action2));
+        //也可以扔一个数组
+        //cc.sequence(tempArray);
+        console.log('on-sequence');
+        let actionsArray = [action1,action2];
+        this.node.runAction(cc.sequence(actionsArray));
+```
