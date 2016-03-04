@@ -107,9 +107,9 @@
 ```
 
 > #####'event.getLocation()'  
-> `返回以当前节点的锚点为坐标原点的鼠标坐标`
-> 返回值类型: cc.Vec2()
-> eg: event.getLocation().x;event.getLocation().y;
+> `返回以当前节点的锚点为坐标原点的鼠标坐标`<br>
+> 返回值类型: cc.Vec2()<br>
+> eg: event.getLocation().x;event.getLocation().y;<br>
 
 ```javascript
   this.node.on('mouseup',function(event){
@@ -138,9 +138,9 @@
 ```
 
 > #####'event.getLocationInView()'  
-> `返回以手机屏幕左上(左下？)为坐标原点的鼠标坐标`
-> 返回值类型: cc.Vec2()
-> eg: event.getLocationInView().x;event.getLocationInView().y;
+> `返回以手机屏幕左上(左下？)为坐标原点的鼠标坐标`<br>
+> 返回值类型: cc.Vec2() <br>
+> eg: event.getLocationInView().x;event.getLocationInView().y; <br>
 
 ```javascript
   this.node.on('mouseup',function(event){
