@@ -1,0 +1,28 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c7ba7cf6-c0ee-4bff-9c56-09af2a983df2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "G-spriteframe": {
+      "ver": "1.0.2",
+      "uuid": "64fe4a2c-4007-467a-8188-a3bc40abc3c1",
+      "rawTextureUuid": "c7ba7cf6-c0ee-4bff-9c56-09af2a983df2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 64,
+      "height": 72,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

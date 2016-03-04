@@ -39,6 +39,11 @@ cc.Class({
         setTimeout(function() {cc.director.loadScene('sys-on-emit');}, 1000);
     },
     
+    'to-cus-scene':function(){
+        this.sceneTransform();
+        setTimeout(function() {cc.director.loadScene('cus-on-emit');}, 1000);
+    },
+    
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
