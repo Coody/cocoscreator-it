@@ -6,3 +6,5 @@
 - [x] easing-action(缓动动作)
 - [x] sys-on-emit(系统事件)
 - [x] cus-on-emit(自定义事件)
+
+> 请进入action目录
