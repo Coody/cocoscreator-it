@@ -1,4 +1,19 @@
-﻿#注:因为加了转场，如果看源码的时候
-#需要将两个场景的Canvas下node的Rotate调成0， scale调成1,1
-#
-#预览的时候，需要将两个场景的Canvas下ndoe的Rotate调成180， scale调成-1,0
+> ##guide-demo 
+
+> =.=很好终于进来了
+
+- [x] simple-action(简单动作)
+simple-action目录会介绍简单动作用法  
+
+- [x] easing-action(缓动动作)
+easing-action目录会介绍缓动动作用法  
+
+- [x] sys-on-emit(系统事件)
+sys-on-emit目录会介绍系统事件用法
+
+- [x] cus-on-emit(自定义事件)
+cus-on-emit目录会介绍自定义事件用法
+
+
+
+
