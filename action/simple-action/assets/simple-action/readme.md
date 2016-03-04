@@ -8,7 +8,10 @@
 > 参数一 pos cc.Vec2(x,y)类型 表示的位置 <br >
 > 参数二 [y ] 位置的y值  <br >
 > 解释 也就是说可以用下面两种方式 <br >
-> this.node.runAction(`cc.place(cc.v2(50,50))`); <br >
-> this.node.runAction(`cc.place(50,50)`); <br >
+
+```javascript
+  this.node.runAction(cc.place(cc.v2(50,50))); 
+  this.node.runAction(cc.place(50,50));  
+```
 
 
