@@ -9,4 +9,4 @@
 
 > 请进入action目录
 
-> [预览地址](http://linhaiwei123.github.io/cocoscreator-it-online/desktop/web-desktop/)
+> [demo预览](http://linhaiwei123.github.io/cocoscreator-it-online/desktop/web-desktop/)
