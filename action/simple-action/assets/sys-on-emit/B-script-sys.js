@@ -74,6 +74,7 @@ cc.Class({
         this.node.on('touchend',function(event){
              this.node.runAction(cc.rotateTo(0.1,0));//旋转180度复原
              this.node.runAction(cc.scaleTo(0.1, 1));//尺寸放大为100%
+			 showEventInfo(event);
         },this);
         
         //'touchcancel'	当手指在目标节点区域外离开屏幕时

@@ -153,7 +153,7 @@ var A = cc.Class({
         //参数一 duration 持续时间
         //参数二 deltaAngleX X方向旋转角度 好像是顺时针
         //参数三 [deltaAngleY ] Y方向旋转角度 没用过，大家可以试下 
-        //cc.rotateTo(duration,deltaAngleX,[deltaAngleY ]);
+        //cc.rotateBy(duration,deltaAngleX,[deltaAngleY ]);
         console.log('on-rotateBy');
         this.node.runAction(cc.rotateBy(1,90)); //一秒内加转90度
     },
