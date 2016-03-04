@@ -8,3 +8,5 @@
 - [x] cus-on-emit(自定义事件)
 
 > 请进入action目录
+
+> [预览地址](http://linhaiwei123.github.io/cocoscreator-it-online/desktop/web-desktop/)
