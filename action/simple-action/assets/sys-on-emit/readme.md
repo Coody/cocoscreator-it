@@ -19,3 +19,152 @@
             this.node.runAction(cc.scaleTo(0.1, 0.8));//尺寸缩小为原来80%
    },this); 
 ```
+
+> #####'mouseenter'  
+> `当鼠标移入目标节点区域时触发，不论是否按下` <br >
+
+```javascript
+   this.node.on('mouseenter',function(event){
+             this.node.runAction(cc.rotateTo(0.1,180));//旋转180度
+   },this);
+```
+
+> #####'mousemove'  
+> `当鼠标在目标节点在目标节点区域中移动时触发，不论是否按下` <br >
+
+```javascript
+  this.node.on('mousemove',function(event){
+            //this.node.runAction(cc.rotateBy(0.1,30));//旋转30度
+  },this);
+```
+
+> #####'mouseleave'  
+> `当鼠标移出目标节点区域时触发，不论是否按下` <br >
+
+```javascript
+   this.node.on('mouseleave',function(event){
+            this.node.runAction(cc.rotateTo(0.1,0));//旋转180度复原
+   },this);
+```
+
+> #####'mouseup'  
+> `当鼠标从按下状态松开时触发一次` <br >
+
+```javascript
+  this.node.on('mouseup',function(event){
+            this.node.runAction(cc.scaleTo(0.1, 1));//尺寸放大为100%
+  },this);
+```
+
+> #####'mousewheel'  
+> `当鼠标滚轮滚动时触发` <br >
+
+```javascript
+  this.node.on('mousewheel',function(event){
+            this.node.runAction(cc.scaleTo(0.1,event.getScrollY()/120));//获取滚动值来设置大小
+  },this);
+```
+
+> ###鼠标事件的回调参数`event`
+> #####'event.type'  
+> `事件类型` eg: 'mouseup', 'mousemove'
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let type = event.type;// 'mouseup'
+  },this);
+```
+
+> #####'event.getDelta()'  
+> `返回和上一次触发时鼠标位置的差值`
+> 返回值类型: cc.Vec2()
+> eg: event.getDelta().x;event.getDelta().y;
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let delta = event.getDelta();// cc.Vec2();
+            let deltaX = delta.x;
+            let deltaY = delta.y;
+  },this);
+```
+
+> #####'event.getDeltaX()'  
+> `返回和上一次触发时鼠标位置X方向上的差值`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let deltaX = event.getDeltaX();
+  },this);
+```
+
+> #####'event.getDeltaY()'  
+> `返回和上一次触发时鼠标位置Y方向上的差值`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let deltaY = event.getDeltaY();
+  },this);
+```
+
+> #####'event.getLocation()'  
+> `返回以当前节点的锚点为坐标原点的鼠标坐标`
+> 返回值类型: cc.Vec2()
+> eg: event.getLocation().x;event.getLocation().y;
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let location = event.getLocation();
+            let locationX = location.x;
+            let locationY = location.y;
+  },this);
+```
+
+> #####'event.getLocationX()'  
+> `返回以当前节点的锚点为坐标原点X方向上的鼠标坐标`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let locationX = event.getLocationX();
+  },this);
+```
+
+> #####'event.getLocationY()'  
+> `返回以当前节点的锚点为坐标原点Y方向上的鼠标坐标`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let locationY = event.getLocationY();
+  },this);
+```
+
+> #####'event.getLocationInView()'  
+> `返回以手机屏幕左上(左下？)为坐标原点的鼠标坐标`
+> 返回值类型: cc.Vec2()
+> eg: event.getLocationInView().x;event.getLocationInView().y;
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let locationInView = event.getLocationInView();
+            let locationInViewX = locationInView.x;
+            let locationInViewY = locationInView.y;
+  },this);
+```
+
+> #####'event.getScrollX()'  
+> `用于'mousewheel'事件 获取鼠标滚轮滚动X差值？鼠标滚轮只能上下滚，也不知道这个怎么用 默认为0`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let scrollX = event.getScrollX();
+  },this);
+```
+
+> #####'event.scrollY()'  
+> `用于'mousewheel'事件 获取鼠标滚轮滚动Y差值？我的鼠标上滚动值为120,下滚动值为-120`
+
+```javascript
+  this.node.on('mouseup',function(event){
+            let scrollY = event.getScrollY(); //0(不动滚轮) 或 -120(下滚滚轮) 或 120(上滚滚轮)
+  },this);
+```
+
