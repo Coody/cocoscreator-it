@@ -21,21 +21,21 @@
 > 参数一：event 事件 emit发送的信息在`event.detail`<br >
 
 > ###一对一流程<br >
-> `A发消息给B`
-> 实际上并不存在A发消息给B这种功能，而是`B监听A`， `A朝天喊`，`监听的人自然能听到并作出反应`
-> 首先B要监听A
+> `A发消息给B`<br >
+> 实际上并不存在A发消息给B这种功能，而是`B监听A`， `A朝天喊`，`监听的人自然能听到并作出反应` <br >
+> 首先B要监听A <br >
 
 ```javascript
    this.A.on('hello!',this.doAction,this); //this is B 
 ```
 
-> 然后A朝天喊
+> 然后A朝天喊 <br >
 
 ```javascript
    this.node.emit('hello!','my name is A'); //this is A
 ```
 
-> 最终B就会听到
+> 最终B就会听到 <br >
 
 ```javascript
    doAction:function(event){
