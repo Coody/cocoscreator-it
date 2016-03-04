@@ -168,3 +168,148 @@
   },this);
 ```
 
+> ###触摸事件
+
+> #####'touchstart'  
+> `当手指触摸到屏幕时(节点范围内)` <br >
+
+```javascript
+   this.node.on('touchstart',function(event){
+             this.node.runAction(cc.rotateTo(0.1,180));//旋转180度
+            this.node.runAction(cc.scaleTo(0.1, 0.8));//尺寸缩小为原来80%
+   },this);
+```
+
+> #####'touchmove'  
+> `当手指在屏幕上目标节点区域内移动时` <br >
+
+```javascript
+   this.node.on('touchmove',function(event){
+            //nothing to do 
+   },this);
+```
+
+> #####'touchend'  
+> `当手指在目标节点区域内离开屏幕时` <br >
+
+```javascript
+   this.node.on('touchend',function(event){
+             this.node.runAction(cc.rotateTo(0.1,0));//旋转180度复原
+             this.node.runAction(cc.scaleTo(0.1, 1));//尺寸放大为100%
+   },this);
+```
+
+> #####'touchcancel'  
+> `当手指在目标节点区域外离开屏幕时` <br >
+
+```javascript
+   this.node.on('touchcancel',function(event){
+      this.node.runAction(cc.rotateTo(0.1,0));//旋转180度复原
+      this.node.runAction(cc.scaleTo(0.1, 1));//尺寸放大为100%
+   },this);
+```
+
+> ###触摸事件的回调参数`event`
+> #####'event.type'  
+> `事件类型` eg: 'touchmove', 'touchend'
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let type = event.type;// 'touchmove'
+  },this);
+```
+
+> #####'event.touch.getDelta()'  
+> `两次触发该事件触摸点的差值`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let delta = event.touch.getDelta();// cc.Vec2()
+            let deltaX = delta.x;
+            let deltaY = delta.y;
+  },this);
+```
+
+> #####'event.touch.getLocation()'  
+> `触摸点位置`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let location = event.touch.getLocation();// cc.Vec2()
+            let locationX = location.x;
+            let locationY = location.y;
+  },this);
+```
+
+> #####'event.touch.getLocationX()'  
+> `触摸点在X方向的位置`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let locationX = event.touch.getLocationX();
+  },this);
+```
+
+> #####'event.touch.getLocationY()'  
+> `触摸点在Y方向的位置`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let locationY = event.touch.getLocationY();
+  },this);
+```
+
+> #####'event.touch.getLocationInView()'  
+> `触摸点在屏幕坐标的位置`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let locationInView = event.touch.getLocationInView();
+            let locationInViewX = locationInView.x;
+            let locationInViewY = locationInView.y;
+  },this);
+```
+
+> #####'event.touch.getPreviousLocation()'  
+> `和上面一样？`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let previousLocation = event.touch.getPreviousLocation();
+            let previousLocationX = previousLocation.x;
+            let previousLocationY = previousLocation.y;
+  },this);
+```
+
+> #####'event.touch.getPreviousLocationInView()'  
+> `和上面一样？用的屏幕坐标？`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let previousLocationInView = event.touch.getPreviousLocationInView();
+            let previousLocationInViewX = previousLocationInView.x;
+            let previousLocationInViewY = previousLocationInView.y;
+  },this);
+```
+
+> #####'event.touch.getStartLocation()'  
+> `触摸点最开始触摸的位置(移动触摸点该值不变)`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let startLocation = event.touch.getStartLocation();
+            let startLocationX = startLocation.x;
+            let startLocationY = startLocation.y;
+  },this);
+```
+
+> #####'event.touch.getStartLocationInView()'  
+> `触摸点最开始触摸的位置(移动触摸点该值不变) 用的屏幕坐标？`
+
+```javascript
+  this.node.on('touchmove',function(event){
+            let startLocationInView = event.touch.getStartLocationInView();
+            let startLocationInViewX = startLocationInView.x;
+            let startLocationInViewY = startLocationInView.y;
+  },this);
+```
