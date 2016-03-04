@@ -1,6 +1,6 @@
 > ##guide-demo 
 
-- [x] easing-action(简单动作)
+- [x] easing-action(缓动动作)
 
 
 > #####cardinalSplineTo(duration,points,tesion)
