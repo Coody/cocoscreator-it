@@ -4,9 +4,9 @@
 
 
 > #####cc.cardinalSplineTo(duration,points,tesion)
-> duration Number<br >
-> points   Array   array of control points<br >
-> tension  Number<br >
+> `duration` Number<br >
+> `points`   Array   array of control points<br >
+> `tension`  Number<br >
 
 ```javascript
    let point1 = cc.v2(0,100);
@@ -19,9 +19,9 @@
 ```
 
 > #####cc.cardinalSplineBy(duration,points,tesion)
-> duration Number<br >
-> points   Array   array of control points<br >
-> tension  Number<br >
+> `duration` Number<br >
+> `points`  Array   array of control points<br >
+> `tension`  Number<br >
 
 ```javascript
    let point1 = cc.v2(0,100);
@@ -34,9 +34,9 @@
 ```
 
 > #####cc.catmullRomTo(duration,points,tesion)
-> dt Number<br >
-> points   Array   array of control points<br >
-> tension  Number<br >
+> `dt` Number<br >
+> `points`   Array   array of control points<br >
+> `tension`  Number<br >
 
 ```javascript
    let point1 = cc.v2(0,100);
@@ -49,9 +49,9 @@
 ```
 
 > #####cc.catmullRomBy(duration,points,tesion)
-> dt Number<br >
-> points   Array   array of control points<br >
-> tension  Number<br >
+> `dt` Number<br >
+> `points`   Array   array of control points<br >
+> `tension`  Number<br >
 
 ```javascript
    let point1 = cc.v2(0,100);
@@ -64,7 +64,7 @@
 ```
 
 > #####cc.easeIn(rate)
-> rate     Number<br >
+> `rate`     Number<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -73,7 +73,7 @@
 ```
 
 > #####cc.easeOut(rate)
-> rate     Number<br >
+> `rate`     Number<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -82,7 +82,7 @@
 ```
 
 > #####cc.easeInOut(rate)
-> rate     Number<br >
+> `rate`     Number<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -139,7 +139,7 @@
 ```
 
 > #####cc.easeElasticIn([period =0.3])
-> period Number 应该是周期什么的<br >
+> `period` Number 应该是周期什么的<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -148,7 +148,7 @@
 ```
 
 > #####cc.easeElasticOut([period =0.3])
-> period Number 应该是周期什么的<br >
+> `period` Number 应该是周期什么的<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -157,7 +157,7 @@
 ```
 
 > #####cc.easeElasticInOut([period =0.3])
-> period Number 应该是周期什么的<br >
+> `period` Number 应该是周期什么的<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
@@ -217,10 +217,10 @@
 > Creates the action easing object. <br >
 > Into the 4 reference point.  <br >
 > To calculate the motion curve.<br >
-> p0	Number	The first bezier parameter<br >
-> p1	Number	The second bezier parameter<br >
-> p2	Number	The third bezier parameter<br >
-> p3	Number	The fourth bezier parameter<br >
+> `p0`	Number	The first bezier parameter<br >
+> `p1`	Number	The second bezier parameter<br >
+> `p2`	Number	The third bezier parameter<br >
+> `p3`	Number	The fourth bezier parameter<br >
 
 ```javascript
     let action = cc.rotateBy(1,180);
