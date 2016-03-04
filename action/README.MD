@@ -1,6 +1,6 @@
-##guide-demo 
+> ##guide-demo 
 
-#####含有的主要内容：
+> #####含有的主要内容：
 
 - [x] simple-action(简单动作)
 - [x] easing-action(缓动动作)
