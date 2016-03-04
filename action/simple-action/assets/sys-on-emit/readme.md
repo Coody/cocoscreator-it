@@ -76,9 +76,9 @@
 ```
 
 > #####'event.getDelta()'  
-> `返回和上一次触发时鼠标位置的差值`
-> 返回值类型: cc.Vec2()
-> eg: event.getDelta().x;event.getDelta().y;
+> `返回和上一次触发时鼠标位置的差值`<br>
+> 返回值类型: cc.Vec2()<br>
+> eg: event.getDelta().x;event.getDelta().y;<br>
 
 ```javascript
   this.node.on('mouseup',function(event){
