@@ -8,8 +8,8 @@
 - [x] cus-on-emit(自定义事件)
 
 > ##给查看源码的同学的提示
-> 因为转场的需要，每个场景下的canvas都经过调整
-> 用cocoscreator查看代码时，请将场景的canvas中的 `scale属性调成1,1 rotate属性调成0`
-> 准备预览时，请将场景的canvas中的 `scale属性调成-1,0 rotate属性调成180`
+> 因为转场的需要，每个场景下的canvas都经过调整 <br >
+> 用cocoscreator查看代码时，请将场景的canvas中的 `scale属性调成1,1 rotate属性调成0`<br >
+> 准备预览时，请将场景的canvas中的 `scale属性调成-1,0 rotate属性调成180`<br >
 
 
